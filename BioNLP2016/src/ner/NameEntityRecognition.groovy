@@ -16,6 +16,8 @@ def executeSR4GN(String outpath,String setupFile,File file){
 	// Input: User can provide the output data folder route ("output" or "C:\output").
     //String sr2gnPath="/Users/marg27/Documents/Saudi\\ Arabia/Projects/BioNLP2016/BioNLP2016/libs/sr4gn/SR4GN_unix/"
     //String sentence ="perl "+sr2gnPath+"SR4GN.pl -s "+sr2gnPath+setupFile+" -i "+file.getAbsolutePath()+" -o "+outpath;
+    // Input: User can provide the output data folder route ("output" or "C/Documents/Projects/Miguel/BioNLP2016/BioNLP2016/libs/sr4gn/SR4GN_unix/"
+    //String sentence ="perl "+sr2gnPath+"SR4GN.pl -s "+sr2gnPath+setupFile+" -i "+file.getAbsolutePath()+" -o "+outpath;
     String sentence = "sh sr4gn.sh"
     Process process= sentence.execute();
     System.out.println(process.text)
